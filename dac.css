@@ -1,0 +1,57 @@
+/* Dark Ages Chronicle: medieval look on top of the shared journal shell. Light brown in both light and dark mode. */
+:root, :root:not([data-theme="light"]) {
+  --paper: #ecdcc0;
+  --ink: #2e2014;
+  --muted: #6b5238;
+  --rule: #b89a72;
+  --accent: #7a2a1c;
+  --accent-soft: rgba(122, 42, 28, 0.08);
+  --serif: "IM Fell English", "Source Serif 4", Georgia, serif;
+  --sans: "Cinzel", "Source Serif 4", Georgia, serif;
+  --black: "UnifrakturMaguntia", "IM Fell English", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #ecdcc0; --ink: #2e2014; --muted: #6b5238; --rule: #b89a72;
+    --accent: #7a2a1c; --accent-soft: rgba(122, 42, 28, 0.08);
+  }
+}
+body {
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 246, 225, 0.55), transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(120, 84, 44, 0.18), transparent 70%);
+  background-attachment: fixed;
+}
+
+/* Masthead with castle in the top-right corner */
+.masthead { position: relative; overflow: hidden; }
+.masthead::after {
+  content: ""; position: absolute; top: 20px; right: 24px;
+  width: 170px; height: 142px; background: url("castle.svg") no-repeat right top / contain;
+  opacity: 0.85; pointer-events: none;
+}
+.masthead .wrap { position: relative; z-index: 1; }
+.masthead h1 { font-family: var(--black); font-weight: 400; letter-spacing: 0; font-size: clamp(42px, 8.5vw, 74px); }
+.masthead .sub { font-size: 22px; }
+
+/* Small caps labels in Cinzel */
+.topbar, .masthead .kicker, h2, .status, footer, .masthead .issue { font-family: var(--sans); }
+.topbar { letter-spacing: 0.1em; }
+h2 { letter-spacing: 0.14em; font-size: 14px; }
+.status { font-size: 14.5px; letter-spacing: 0.02em; }
+.grid h3 { font-size: 21px; font-weight: 400; color: var(--accent); }
+.grid p { font-size: 18px; }
+
+/* Illuminated first letter on the lead paragraph */
+.lead::first-letter {
+  font-family: var(--black); float: left; font-size: 3.4em; line-height: 0.9;
+  padding: 6px 10px 0 0; color: var(--accent);
+}
+
+.imprint .mark { font-family: var(--black); font-weight: 400; }
+
+@media (max-width: 1240px) {
+  .masthead { padding-top: 112px; }
+  .masthead::after { width: 115px; height: 96px; top: 14px; right: 16px; }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="#4a3220">
+  <!-- flags -->
+  <path d="M58 22v-16h1.6v16zM59.6 6l14 4-14 4z"/>
+  <path d="M138 14v-14h1.6v14zM139.6 0l16 4.5-16 4.5z"/>
+  <!-- left tower -->
+  <path d="M38 200V40h-4V22h8v8h8v-8h8v8h8v-8h8v18h-4v160z"/>
+  <!-- curtain wall -->
+  <path d="M74 200V110h-2V98h7v6h7v-6h7v6h7v-6h7v6h7v-6h7v12h-2v90z"/>
+  <!-- keep -->
+  <path d="M112 200V34h-4V14h8v8h8v-8h8v8h8v-8h8v8h8v-8h8v20h-4v166z"/>
+  <!-- right wall -->
+  <path d="M164 200v-80h-2v-12h7v6h7v-6h7v6h7v-6h7v12h-2v80z"/>
+  <!-- right tower -->
+  <path d="M190 200V68h-3V52h7v7h7v-7h7v7h7v-7h7v16h-3v132z"/>
+  <!-- ground -->
+  <path d="M0 200c30-8 70-10 120-10s90 2 120 10z"/>
+  <!-- windows and gate cut out -->
+  <g fill="#ecdcc0">
+    <path d="M52 70a4 4 0 0 1 8 0v12h-8zM52 120a4 4 0 0 1 8 0v12h-8z"/>
+    <path d="M132 60a5 5 0 0 1 10 0v16h-10zM124 110a4 4 0 0 1 8 0v12h-8zM144 110a4 4 0 0 1 8 0v12h-8z"/>
+    <path d="M124 200v-30a13 13 0 0 1 26 0v30z"/>
+    <path d="M199 96a3.5 3.5 0 0 1 7 0v10h-7zM199 140a3.5 3.5 0 0 1 7 0v10h-7z"/>
+  </g>
+  <!-- portcullis -->
+  <g stroke="#4a3220" stroke-width="1.6">
+    <path d="M130 162v38M137 158v42M144 162v38M124 176h26M124 188h26"/>
+  </g>
+</svg>
