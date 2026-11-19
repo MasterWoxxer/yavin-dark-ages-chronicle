@@ -6,9 +6,9 @@
   --rule: #b89a72;
   --accent: #7a2a1c;
   --accent-soft: rgba(122, 42, 28, 0.08);
-  --serif: "IM Fell English", "Source Serif 4", Georgia, serif;
+  --serif: "EB Garamond", "Source Serif 4", Georgia, serif;
   --sans: "Cinzel", "Source Serif 4", Georgia, serif;
-  --black: "UnifrakturMaguntia", "IM Fell English", Georgia, serif;
+  --black: "Cinzel Decorative", "Cinzel", Georgia, serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -17,6 +17,7 @@
   }
 }
 body {
+  font-size: 20px;
   background-color: var(--paper);
   background-image:
     radial-gradient(ellipse at 50% 0%, rgba(255, 246, 225, 0.55), transparent 60%),
@@ -32,7 +33,7 @@ body {
   opacity: 0.85; pointer-events: none;
 }
 .masthead .wrap { position: relative; z-index: 1; }
-.masthead h1 { font-family: var(--black); font-weight: 400; letter-spacing: 0; font-size: clamp(42px, 8.5vw, 74px); }
+.masthead h1 { font-family: var(--black); font-weight: 700; letter-spacing: 0.01em; font-size: clamp(34px, 6.6vw, 60px); line-height: 1.12; }
 .masthead .sub { font-size: 22px; }
 
 /* Small caps labels in Cinzel */
@@ -45,11 +46,11 @@ h2 { letter-spacing: 0.14em; font-size: 14px; }
 
 /* Illuminated first letter on the lead paragraph */
 .lead::first-letter {
-  font-family: var(--black); float: left; font-size: 3.4em; line-height: 0.9;
+  font-family: var(--black); font-weight: 700; float: left; font-size: 3em; line-height: 0.95;
   padding: 6px 10px 0 0; color: var(--accent);
 }
 
-.imprint .mark { font-family: var(--black); font-weight: 400; }
+.imprint .mark { font-family: var(--black); font-weight: 700; }
 
 @media (max-width: 1240px) {
   .masthead { padding-top: 112px; }
